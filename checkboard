@@ -1,0 +1,18 @@
+from tkinter import *
+import random
+root=Tk()
+
+
+for a in range(8):
+    for b in range(8):
+        
+        x=Button(root,bg='white',width="10",height="5")
+        y=Button(root,bg='black',width="10",height="5")
+        if((a+b)%2==0):
+            x.grid(row=a,column=b)
+        else:
+            y.grid(row=a,column=b)
+
+
+root.mainloop()
+
